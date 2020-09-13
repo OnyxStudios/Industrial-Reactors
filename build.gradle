@@ -34,12 +34,17 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "io.github.cottonmc:UniversalComponents:${project.uc_version}"
+	modRuntime "me.zeroeightsix:fiber:${project.fiber_version}" //force version to resolve conflicts
+
 	modImplementation "io.github.onyxstudios:Cardinal-Components-API:${project.cca_version}"
 	modImplementation "teamreborn:energy:${project.reborn_energy_version}"
 	modImplementation "io.github.GlassPane:Mesh:${project.mesh_version}"
 	modApi "io.github.GlassPane:Mesh:${project.mesh_version}:api"
 	modImplementation "com.github.emilyploszaj:trinkets:${project.trinkets_version}"
+	modImplementation("io.github.cottonmc:UniversalComponents:${project.uc_version}") {
+		exclude group: "io.github.OnyxStudios.Cardinal-Components-API"
+		exclude group: "net.fabricmc.fabric-api"
+	}
 
 	annotationProcessor "io.github.GlassPane:Mesh:${project.mesh_version}:annotations"
 
@@ -75,6 +80,12 @@ tasks.withType(JavaCompile) {
 task sourcesJar(type: Jar, dependsOn: classes) {
 	archiveClassifier.set("sources")
 	from sourceSets.main.allSource
+}
+
+runClient {
+	systemProperties(
+			"mesh.debug": true
+	)
 }
 
 jar {
