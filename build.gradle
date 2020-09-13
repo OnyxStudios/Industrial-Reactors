@@ -12,6 +12,10 @@ group = project.maven_group
 
 repositories {
 	maven {
+		name = "Ladysnake Libs"
+		url = "https://dl.bintray.com/ladysnake/libs"
+	}
+	maven {
 		name = "Onyx Studios"
 		url = "https://maven.onyxstudios.dev"
 	}
@@ -38,8 +42,12 @@ dependencies {
 
 	modImplementation "io.github.onyxstudios:Cardinal-Components-API:${project.cca_version}"
 	modImplementation "teamreborn:energy:${project.reborn_energy_version}"
-	modImplementation "io.github.GlassPane:Mesh:${project.mesh_version}"
-	modApi "io.github.GlassPane:Mesh:${project.mesh_version}:api"
+	modImplementation ("io.github.GlassPane:Mesh:${project.mesh_version}") {
+		exclude group: "net.fabricmc.fabric-api"
+	}
+	modApi ("io.github.GlassPane:Mesh:${project.mesh_version}:api") {
+		exclude group: "net.fabricmc.fabric-api"
+	}
 	modImplementation "com.github.emilyploszaj:trinkets:${project.trinkets_version}"
 	modImplementation("io.github.cottonmc:UniversalComponents:${project.uc_version}") {
 		exclude group: "io.github.OnyxStudios.Cardinal-Components-API"
