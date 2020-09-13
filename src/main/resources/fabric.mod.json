@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "industrial_reactors",
   "version": "${version}",
 
   "name": "Example Mod",
