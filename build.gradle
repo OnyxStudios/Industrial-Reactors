@@ -46,6 +46,7 @@ dependencies {
 	modRuntime "me.shedaniel:RoughlyEnoughItems:${project.rei_version}"
 	modRuntime "TechReborn:TechReborn-1.16:${project.techreborn_version}"
 	modRuntime "RebornCore:RebornCore-1.16:${project.reborncore_version}"
+	modRuntime "com.github.SuperCoder7979:databreaker:${project.databreaker_version}"
 }
 
 processResources {
