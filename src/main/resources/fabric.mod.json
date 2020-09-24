@@ -28,6 +28,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
+    ],
+    "cardinal-components-block": [
+      "dev.onyxstudios.industrialreactors.component.ReactorBlockComponents"
+    ],
+    "cardinal-components-chunk": [
+      "dev.onyxstudios.industrialreactors.component.ReactorChunkComponents"
+    ],
+    "mesh:recipes": [
+      "dev.onyxstudios.industrialreactors.crafting.ReactorRecipes"
+    ]
+  },
+  "custom": {
+    "cardinal-components": [
+      "universalcomponents:inventory"
     ]
   },
   "mixins": [

@@ -1,0 +1,26 @@
+{
+  "block.industrial_reactors.lead_ore": "Lead Ore",
+  "block.industrial_reactors.uranium_ore": "Uranium Ore",
+  "block.industrial_reactors.enriched_uranium_block": "Block of Enriched Uranium",
+  "block.industrial_reactors.lead_block": "Block of Lead",
+  "block.industrial_reactors.steel_block": "Block of Steel",
+  "block.industrial_reactors.uranium_block": "Block of Uranium",
+  "block.industrial_reactors.graphite_block": "Block of Graphite",
+  "block.industrial_reactors.fuel_assembly_controller": "Fuel Assembly Controller",
+  "block.industrial_reactors.fuel_rod_assembly": "Fuel Rod Assembly",
+  "block.industrial_reactors.steam_turbine": "Simple Steam Turbine",
+
+  "item.industrial_reactors.enriched_uranium_ingot": "Enriched Uranium Ingot",
+  "item.industrial_reactors.lead_ingot": "Lead Ingot",
+  "item.industrial_reactors.steel_ingot": "Steel Ingot",
+  "item.industrial_reactors.uranium_ingot": "Uranium Ingot",
+  "item.industrial_reactors.graphite": "Graphite",
+  "item.industrial_reactors.uranium_fuel_pellet": "Uranium Fuel Pellet",
+  "item.industrial_reactors.uranium_fuel_rod": "Uranium Fuel Rod",
+
+  "item.industrial_reactors.geiger_counter": "Geiger Counter",
+  "item.industrial_reactors.thermometer": "Thermometer",
+
+  "itemGroup.industrial_reactors.items": "Industrial Reactors",
+  "tooltip.industrial_reactors.fuel_rod_depleted": "(Depleted)"
+}
