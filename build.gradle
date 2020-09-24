@@ -20,12 +20,20 @@ repositories {
 		url = "https://maven.onyxstudios.dev"
 	}
 	maven {
+		name = "TehNut"
+		url = "https://maven.tehnut.info"
+	}
+	maven {
 		name = "CottonMC Releases"
 		url = "https://server.bbkr.space/artifactory/libs-release"
 	}
 	maven {
 		name = "JitPack"
 		url = "https://jitpack.io"
+	}
+	maven {
+		name = "CurseMaven"
+		url = "https://www.cursemaven.com"
 	}
 }
 
@@ -60,6 +68,10 @@ dependencies {
 	modRuntime "TechReborn:TechReborn-1.16:${project.techreborn_version}"
 	modRuntime "RebornCore:RebornCore-1.16:${project.reborncore_version}"
 	modRuntime "com.github.SuperCoder7979:databreaker:${project.databreaker_version}"
+	modRuntime "mcp.mobius.waila:Hwyla:${project.hwyla_version}"
+	modRuntime("com.github.badasintended:megane:${project.megane_version}") {
+		exclude group: "alexiil.mc.lib", module: "libblockattributes-fluids"
+	}
 }
 
 processResources {
